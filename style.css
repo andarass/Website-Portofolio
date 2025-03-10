@@ -312,9 +312,65 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* WORK & EXPERIENCE SECTION */
+#work-experience {
+  position: relative;
+  text-align: center;
+}
 
-#experience {
+.work-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Kontainer utama yang mengatur tata letak flex */
+.work-experience-details-container {
+  display: flex;
+  flex-wrap: wrap; /* Membungkus artikel ke baris baru */
+  justify-content: space-between; /* Membuat jarak antar artikel */
+  gap: 2rem; /* Jarak antar artikel */
+  margin-top: 2rem;
+}
+
+/* Setiap artikel akan mengambil lebar 48% dari lebar kontainer */
+.article-content {
+  width: 48%; /* Lebar artikel 48%, 2 artikel dalam satu baris */
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Gambar dan teks dalam artikel */
+.article-content img.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.article-content div {
+  text-align: left;
+}
+
+.article-content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.article-content p {
+  margin: 0.25rem 0 0;
+  color: #555;
+}
+
+/* TECH STACK KNOWLEDGE SECTION */
+
+#tech-experience {
   position: relative;
 }
 
@@ -416,6 +472,14 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+.instagram-icon {
+  height: 2.5rem;
+}
+
+.facebook-icon {
+  height: 2.3rem;
 }
 
 /* FOOTER SECTION */
