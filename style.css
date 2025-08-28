@@ -348,7 +348,6 @@ section {
   margin-bottom: 5px;
 }
 
-
 /* Gambar dan teks dalam artikel */
 .article-content img.icon {
   width: 40px;
@@ -424,6 +423,20 @@ article div {
 
 #projects {
   position: relative;
+}
+
+.about-project-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-project-containers .details-container {
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
 }
 
 .color-container {
