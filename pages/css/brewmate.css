@@ -10,7 +10,7 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     line-height: 1.6;
     color: var(--dark);
   }
@@ -31,7 +31,7 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
   .nav-container { display: flex; justify-content: space-between; align-items: center; }
-  .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
+  .logo { font-family: "EB Garamond", serif; font-weight: 600; font-style: normal; font-size: 2.5rem; color: var(--primary); }
   .nav-links { display: flex; gap: 1.5rem; }
   .nav-links a { text-decoration: none; color: var(--dark); transition: 0.3s; }
   .nav-links a:hover { color: var(--primary); }
@@ -39,7 +39,7 @@
   
   /* Hero */
   .hero {
-    background: url('https://source.unsplash.com/1600x800/?coffee,cafe') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/brewmate/hero.jpg') center/cover no-repeat;
     color: var(--light);
     height: 90vh;
     display: flex;
@@ -47,7 +47,7 @@
     text-align: center;
   }
   .hero-content { width: 100%; }
-  .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  .hero h1 { font-family: "EB Garamond"; font-weight: 400; serif; font-size: 2.5rem; margin-bottom: 1rem; }
   .hero p { margin-bottom: 1.5rem; }
   .btn {
     background: var(--primary);
