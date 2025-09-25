@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Andara Puteri Syalsabella</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #666;
+    }
+
+    /* Filter */
+    .filter-buttons {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .filter-buttons button {
+      background: none;
+      border: 1px solid #333;
+      color: #333;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 0 2rem 10rem 0;
+      max-width: 1200px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fafafa;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .card-content .buttons a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #333;
+      transition: all 0.3s;
+    }
+
+    .card-content .buttons a:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      height: 1rem;
+      padding: 1rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Explore more of my works in Web Development & UI/UX Design</p>
+  </header>
+
+  <!-- Filter -->
+  <div class="filter-buttons">
+    <button class="active" onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('web')">Web Development</button>
+    <button onclick="filterProjects('uiux')">UI/UX Design</button>
+    <button onclick="filterProjects('graphic')">Graphic Design</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <!-- Example Card -->
+    <div class="card" data-category="web">
+      <img src="images/thriftshop.png" alt="Thriftshop">
+      <div class="card-content">
+        <h3>Thriftshop</h3>
+        <p>E-commerce website for thrift clothing with modern UI.</p>
+        <div class="buttons">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="web">
+      <img src="images/psychocare.png" alt="Psychocare">
+      <div class="card-content">
+        <h3>Psychocare</h3>
+        <p>Web app for mental health consultations and resources.</p>
+        <div class="buttons">
+          <a href="#">GitHub</a>
+          <a href="#">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="uiux">
+      <img src="images/ui-design.png" alt="UI Project">
+      <div class="card-content">
+        <h3>Mobile UI Kit</h3>
+        <p>UI/UX design exploration for a finance mobile app.</p>
+        <div class="buttons">
+          <a href="#">Figma</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="graphic">
+      <img src="images/poster.png" alt="Graphic Project">
+      <div class="card-content">
+        <h3>Branding Poster</h3>
+        <p>Creative poster design for digital marketing campaign.</p>
+        <div class="buttons">
+          <a href="#">Behance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Andaraps. All rights reserved.
+  </footer>
+
+  <!-- Script Filter -->
+  <script>
+    function filterProjects(category) {
+      let cards = document.querySelectorAll('.card');
+      let buttons = document.querySelectorAll('.filter-buttons button');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
