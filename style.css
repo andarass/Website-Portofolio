@@ -455,6 +455,10 @@ article div {
   color: black;
 }
 
+.project-text {
+  margin: -20px 0 15px;
+}
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);

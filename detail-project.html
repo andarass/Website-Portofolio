@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Detail - Andara Puteri Syalsabella</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #333;
+      }
+
+      /* Section spacing */
+      section {
+        padding: 4rem 2rem;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      section h3 {
+        margin: 40px 0 12px;
+      }
+
+      header {
+        text-align: center;
+        padding: 6rem 1rem 2rem;
+        height: 80px;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        color: #666;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      /* Project Detail */
+      #project-detail {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      #project-detail img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 12px;
+        margin: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      #project-detail img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      #project-detail p {
+        max-width: 800px;
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .breadcrumb {
+        font-size: 1.5rem;
+        color: #666;
+        margin: 1rem 2rem;
+      }
+      .breadcrumb a {
+        text-decoration: none;
+        color: #333;
+        transition: color 0.3s;
+      }
+      .breadcrumb a:hover {
+        color: #000;
+      }
+      .breadcrumb span {
+        color: #999;
+      }
+
+      .text-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .text-container .overview,
+      .text-container .tech-stack {
+        text-align: left; /* atau center kalau mau */
+      }
+
+      .overview p {
+        margin-bottom: 1rem;
+        text-align: justify; /* opsional biar rata kiri-kanan */
+        line-height: 1.7;
+      }
+
+      .tech-stack {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
+        font-size: 3rem; /* atur ukuran icon */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .tech-stack i:hover {
+        transform: scale(1.2);
+      }
+
+      /* Buttons */
+      .btn-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start; 
+        text-align: center; 
+      }
+
+      .btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 0.95rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .btn-color-1 {
+        background: #333;
+        color: #fff;
+      }
+
+      .btn-color-1:hover {
+        background: #555;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .btn-color-2 {
+        border: 1px solid #333;
+        color: #333;
+        background: transparent;
+      }
+
+      .btn-color-2:hover {
+        background: #333;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Related Projects */
+      .related-projects {
+        margin-top: 4rem;
+      }
+
+      .related-projects h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: #fafafa;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .card-content h3 {
+        margin: 0 0 0.5rem;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+      }
+
+      .card-content .buttons a {
+        text-decoration: none;
+        font-size: 0.85rem;
+        margin: 0 0.3rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        border: 1px solid #333;
+        transition: all 0.3s;
+      }
+
+      .card-content .buttons a:hover {
+        background: #333;
+        color: #fff;
+      }
+
+      footer {
+        height: 30px;
+        text-align: center;
+        padding: 1rem;
+        color: #777;
+        font-size: 0.9rem;
+        margin-top: 4rem;
+        border-top: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Back Button halaman utama -->
+    <div class="breadcrumb">
+      <a href="./index.html#projects">Back to Profile</a> &gt;
+      <span>Warkod</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <h1>Warkod</h1>
+      <p>
+        Website kedai kopi online dengan sistem katalog menu dan pemesanan yang
+        simple dan modern.
+      </p>
+    </header>
+
+    <!-- Project Detail Section -->
+    <section id="project-detail">
+      <img
+        src="./assets/portfolio/project-1-warkod.png"
+        alt="Warkod Project Image"
+      />
+
+      <div class="text-container">
+        <h3 class="subject-title">Overview Project :</h3>
+        <div class="overview"></div>
+      </div>
+
+      <div class="text-container">
+        <h3 class="subject-title">Tech Stack :</h3>
+        <div class="tech-stack"></div>
+      </div>
+
+      <div class="text-container">
+        <h3 class="subject-title">Live Demo :</h3>
+        <div class="btn-container">
+          <!-- <a
+            href="https://github.com/andarass/warkod.git"
+            class="btn btn-color-2"
+            target="_blank"
+            >Github</a
+          > -->
+          <a
+            href="https://warkod.vercel.app/"
+            class="btn btn-color-1"
+            target="_blank"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+      <h2>Related Projects</h2>
+      <div class="portfolio-grid" id="related-projects">
+        <!-- Related projects akan dimuat otomatis -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Andaraps. All rights reserved.</footer>
+
+    <script src="./detail-project.js"></script>
+  </body>
+</html>
