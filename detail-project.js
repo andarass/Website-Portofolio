@@ -53,8 +53,8 @@ const projects = {
       ],
     image: "./assets/portfolio/project-3-psychocare.png",
     tech: ["html5-plain", "css3-plain", "javascript-plain", "php-plain"],
-    github: "https://github.com/andarass/psychocare.git",
-    demo: "https://psychocare.vercel.app/",
+    github: "https://github.com/andarass/UTBK.git",
+    demo: "https://github.com/andarass/UTBK.git",
   },
 };
 
