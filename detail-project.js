@@ -42,8 +42,8 @@ const projects = {
     github: "https://github.com/andarass/psychocare.git",
     demo: "https://psychocare.vercel.app/",
   },
-  psychocare: {
-    title: "Psychocare",
+  perpustakaan: {
+    title: "Perpustakaan",
     description:
       "This page contains the case study of Psychocare which includes the Project Overview, Tools Used and Live Demo to the official product.",
     overview: [
@@ -51,10 +51,10 @@ const projects = {
         "The goal of Psychocare is to create a safe, supportive, and user friendly environment that encourages visitors to learn more about mental health and take proactive steps toward self care. With a clean design and accessible navigation, the website makes it easier for users to find guidance and connect with consultation services.",
         "Feel free to check out the project by visiting the Live Demo.",
       ],
-    image: "./assets/portfolio/project-3-psychocare.png",
-    tech: ["html5-plain", "css3-plain", "javascript-plain", "php-plain"],
+    image: "./assets/portfolio/project-5-perpustakaan.png",
+    tech: ["laravel-plain", "php-plain", "mysql-plain", "tailwindcss-original", "alpinejs-original", "docker-plain", "excel-original", "dompdf-plain",],
     github: "https://github.com/andarass/UTBK.git",
-    demo: "https://github.com/andarass/UTBK.git",
+    demo: "https://perpustakaansekolahfransiskuslawang.my.id/",
   },
 };
 
