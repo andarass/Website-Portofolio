@@ -45,10 +45,10 @@ const projects = {
   perpustakaan: {
     title: "Perpustakaan",
     description:
-      "This page contains the case study of Psychocare which includes the Project Overview, Tools Used and Live Demo to the official product.",
+      "This page contains the case study of Perpustakaan Fransiskus Lawang which includes the Project Overview, Tools Used and Live Demo to the official product.",
     overview: [
-        "Psychocare is a dedicated website built to provide reliable information and resources around mental health. The platform not only shares educational content about common mental health issues but also offers a space where users can seek consultation regarding their well being.",
-        "The goal of Psychocare is to create a safe, supportive, and user friendly environment that encourages visitors to learn more about mental health and take proactive steps toward self care. With a clean design and accessible navigation, the website makes it easier for users to find guidance and connect with consultation services.",
+        "Perpustakaan Fransiskus Lawang is a modern web-based library management system built to improve efficiency in handling book data and student borrowing activities. The website integrates several key features, including QR code scanning for instant book detail access, Dompdf for generating digital borrowing receipts, and Excel import/export to simplify data management for users and students.",
+        "This project was developed with a focus on practicality and automation, helping librarians minimize manual work while providing students with an easier way to browse and borrow books. By combining clean design with robust functionality, Perpustakaan Fransiskus Lawang supports a smoother and more organized digital library experience.",
         "Feel free to check out the project by visiting the Live Demo.",
       ],
     image: "./assets/portfolio/project-5-perpustakaan.png",
