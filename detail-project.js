@@ -28,6 +28,20 @@ const projects = {
     github: "https://github.com/andarass/website-thriftshop.git",
     demo: "https://thriftshop-wear.vercel.app/",
   },
+  psychocare: {
+    title: "Psychocare",
+    description:
+      "This page contains the case study of Psychocare Wear which includes the Project Overview, Tools Used and Live Demo to the official product.",
+    overview: [
+        "Psychocare is a simple template UI of a mental health website built for providing online consultations and sharing the latest news about mental well-being. The platform comes with essential features such as a consultation booking system, headline news, about, and contact pages, making the user experience smooth and supportive.",
+        "The project was designed with a clean and minimal User Interface to ensure easy navigation for users seeking help. By focusing on simplicity and accessibility, Psychocare aims to provide a welcoming online environment for those looking for mental health support and information.",
+        "Feel free to check out the project by visiting the Live Demo."
+      ],
+    image: "./assets/portfolio/project-3-psychocare.png",
+    tech: ["html5-plain", "css3-plain", "javascript-plain"],
+    github: "https://github.com/andarass/psychocare.git",
+    demo: "https://psychocare.vercel.app/",
+  },
   kitaptn: {
     title: "KitaPTN",
     description:
@@ -39,8 +53,8 @@ const projects = {
       ],
     image: "./assets/portfolio/project-4-kitaptn.png",
     tech: ["tailwindcss-original", "bootstrap-plain", "laravel-plain", "php-plain", "mysql-plain"],
-    github: "https://github.com/andarass/psychocare.git",
-    demo: "https://psychocare.vercel.app/",
+    github: "https://github.com/andarass/UTBK.git",
+    demo: "https://github.com/andarass/UTBK.git",
   },
   perpustakaan: {
     title: "Perpustakaan",
@@ -53,7 +67,7 @@ const projects = {
       ],
     image: "./assets/portfolio/project-5-perpustakaan.png",
     tech: ["laravel-plain", "php-plain", "mysql-plain", "tailwindcss-original", "alpinejs-original", "docker-plain", "excel-original", "dompdf-plain",],
-    github: "https://github.com/andarass/UTBK.git",
+    github: "https://github.com/Duta46/perpustakaan-barcode-system.git",
     demo: "https://perpustakaansekolahfransiskuslawang.my.id/",
   },
 };
