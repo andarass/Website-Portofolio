@@ -211,6 +211,12 @@ section {
   height: 2rem;
 }
 
+.icon#web {
+  margin-top: -4px;
+  margin-left: -4px;
+  height: 2.5rem;
+}
+
 /* BUTTONS */
 
 .btn-containerr {
@@ -437,6 +443,10 @@ article div {
 .about-project-containers .details-container {
   flex: 0 0 calc(33.333% - 20px);
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .color-container {
@@ -451,12 +461,22 @@ article div {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.2rem 0 0.5rem;
   color: black;
 }
 
 .project-text {
-  margin: -20px 0 15px;
+  margin: 0 1rem 1.2rem;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.btn-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .project-btn {
